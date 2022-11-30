@@ -7,6 +7,7 @@ import ThemeProvider from '@mui/material/styles/ThemeProvider';
 import { theme } from './theme';
 import { RecoilRoot } from 'recoil';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import twitterCard from '@/assets/background/twitter-card.webp';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -42,7 +43,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
           name='twitter:description'
           content='Next Generation Blockchain Symbol Web Site. Be the first to check the latest information. You can also get information about the active community.'
         />
-        <meta name='twitter:image' content={`/twitter-card.webp`} />
+        <meta name='twitter:image' content={twitterCard} />
       </Helmet>
       <ThemeProvider theme={theme}>
         <RecoilRoot>
