@@ -195,6 +195,24 @@ function Documents(): JSX.Element {
                       </Grid>
                     </Grid>
                   ))}
+                  {/* Symbol Tokenomics section */}
+                  <Grid item xs={12}>
+                    <div
+                      style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        height: '40vh',
+                      }}
+                    >
+                      <SectionTitle>{t('docs:section_title_wellcom')}</SectionTitle>
+                      <Typography gutterBottom variant='body1'>
+                        {t('docs:section_title_wellcom_body')}
+                        {/* ここに基本情報だけ書いておいて、Docsの記事の方に全文を掲載すれば良い */}
+                      </Typography>
+                    </div>
+                  </Grid>
                 </Grid>
               </CardContent>
             </Card>
@@ -222,8 +240,8 @@ function Documents(): JSX.Element {
                       placeholder={t('docs:search_bar_placeholder')}
                       endAdornment={
                         <InputAdornment position='end'>
-                          <Button variant='contained' onClick={onSearchDocuments}>
-                            <IoSearchOutline size='100' />
+                          <Button variant='contained' size='large' onClick={onSearchDocuments}>
+                            <IoSearchOutline />
                           </Button>
                         </InputAdornment>
                       }

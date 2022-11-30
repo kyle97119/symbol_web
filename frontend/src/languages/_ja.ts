@@ -135,6 +135,7 @@ Symbol Community Web の記事を編集、追加するには Portal からの操
     advice_button5_2_link:"https://github.com/ymuichiro/symbol_web",
     advice_button5_3: "Symbol WEB ポータル",
     advice_button5_3_link:"https://cms.symbol-community.com/",
+    section_title_tokenomics: 'トークノミクス',
     section_search_article: '記事を検索する',
     search_bar_placeholder: '検索したい事を入力して下さい',
     no_articles: '記事がありませんでした',
